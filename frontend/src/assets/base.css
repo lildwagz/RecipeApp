@@ -1,0 +1,41 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #4CAF50;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: 3rem auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.error-message {
+    text-align: center;
+    color: #D32F2F;
+    background-color: #FFCDD2;
+    border: 1px solid #EF9A9A;
+    padding: 1rem;
+    margin: 1.5rem auto;
+    border-radius: 8px;
+    max-width: 700px;
+}
+
+.message {
+    text-align: center;
+    color: #555;
+    font-size: 1.2rem;
+    margin: 2rem;
+}
